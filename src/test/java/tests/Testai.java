@@ -1,23 +1,21 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.Common;
+import pages.SkriejuDubysa;
 import utils.Driver;
-
-import static utils.Driver.driver;
 
 class Testai extends TestsEnvironment {
 
 
     @Test
     public void testSkrieju() {
-
+        //SkriejuDubysa.kazkoksMetodas();
         Assert.assertTrue(Driver.driver.getCurrentUrl().contains("http://skriejudubysa.lt/"));
-
     }
 
 
+
 }
+
+

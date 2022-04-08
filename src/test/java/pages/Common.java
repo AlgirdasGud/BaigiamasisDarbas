@@ -1,28 +1,31 @@
 package pages;
 
 
+import org.openqa.selenium.By;
 import utils.Driver;
 
 public class Common {
 
-    public static void openlink(String link) {
+    public static void openlink(String url) {
 
-        Driver.driver.get(link);
+        Driver.driver.get(url);
     }
 
-    public static void clickButton() {
+    public static void findElement(By locator){
+
+        Driver.driver.findElement(locator);
+
     }
 
-    public static String getButtonText() {
-    return getButtonText();
-    }
 
-    public static String inpufField() {
-        return inpufField();
-    }
+
+
+
+
+
+
 
 
 }
-
 
 

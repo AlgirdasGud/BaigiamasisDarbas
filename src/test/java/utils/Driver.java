@@ -14,6 +14,7 @@ public class Driver {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("ignore-certificate-errors");
         driver = new ChromeDriver(options);
+        String locator = "";
     }
     //    driver = new ChromeDriver();
 
@@ -22,7 +23,6 @@ public class Driver {
 
         driver.quit();
     }
-
 
 }
 

@@ -5,10 +5,8 @@ import org.testng.annotations.BeforeTest;
 import pages.Common;
 import utils.Driver;
 
-import static utils.Driver.driver;
 
-
-public class TestsEnvironment {
+public class TestsEnvironment extends Driver {
 
     @BeforeTest
     public void testTestai() {
@@ -22,6 +20,9 @@ public class TestsEnvironment {
         driver.quit();
 
     }
+
+
+
 
 
 }
